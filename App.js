@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, SectionList, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, SectionList, TouchableOpacity,Alert} from 'react-native';
 //
 const datasource = [
     {data: [
@@ -50,10 +50,10 @@ const styles = StyleSheet.create({
     },
 });
 
-const renderItem = ({item}) => {
+const renderItem = ({item,index,section}) => {
     return (
-        <TouchableOpacity style={styles.opacityStyle}>
-            <Text style={styles.textStyle}>{item.key}</Text>
+        <TouchableOpacity style={styles.opacityStyle} onPress={() => Alert.alert(item.key + " is selected!")}>
+            <Text style={styles.textStyle}>{index+1}.{section.title}.{item.key}</Text>
         </TouchableOpacity>
     );
 };
