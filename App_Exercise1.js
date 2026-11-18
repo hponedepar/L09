@@ -52,7 +52,7 @@ const renderItem = ({item}) => {
         </TouchableOpacity>
     );
 };
-
+//
 const App = () => {
     return (
         <View style={styles.container}>
