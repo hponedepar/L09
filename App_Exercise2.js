@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, SectionList, TouchableOpacity,Alert} from 'react-native';
-////
+/////
 const datasource = [
     {data: [
         {key: 'a'},
